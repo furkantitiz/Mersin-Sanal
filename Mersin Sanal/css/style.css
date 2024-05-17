@@ -1,0 +1,628 @@
+/* Tüm elementlere uyarlanacaklar */
+/**************************************************************/
+*{
+    margin: 0; /*Dış boşluklar 0*/
+    padding: 0; /*İç boşluklar 0*/
+    box-sizing: border-box; /*Genişlik ve yükseklik tüm kutuyu içerir*/
+    -webkit-font-smoothing: antialiased; /*Webkit tabanlı tarayıcılarda metinlerin daha pürüzsüz şekilde görüntülenmesini sağlar*/
+    text-size-adjust: 100%; /*Mobil tarayıcılarda metin boyutunu otomatik olarak ayarlamayı engeller*/
+}
+
+
+
+/* body - sayfanın gövde ayarları */
+/*****************************************/
+body{
+    font-family: "Montserrat", sans-serif; /*yazı tipini montserrat olarak ayarlar*/
+    color: black; /*yazı rengi siyah*/
+    background-color:#F2F1F0; /*arka plan beyaz*/
+    text-align: center; /*yazıyı sayfanın ortasına hizalar*/
+}
+
+
+
+
+
+/* navbar - header sekme ayarları */
+/*******************************************************/
+.navbar{
+    overflow: hidden; /*içeriğin taşması durumunda gizler*/
+    background-color: black; /*arka plan renk siyah*/
+    position: fixed; /*navbarı ekrana sabitler*/
+    text-align: center; /*yazıyı ortalar*/
+    font-size: 25px; /*yazıların boyutunu 25px olarak ayarlar*/
+    top:0%; /*navbarı sayfanın üst kenarına 0% olarak hizalar */
+    width: 100%; /*navbarın genişliğini 100% olarak ayarlar*/
+}
+
+
+
+
+/* link ayarları */
+.navbar a{
+    float: left; /*içeriği sola doğru yaslar*/
+    display: block; /*linklerin genişliği tüm yatay alanı kaplar*/
+    color: white; /*yazı rengi beyaz*/
+    padding: 20px 40px; /*Üst ve alt iç kenarlardan 20px boşluk sağ ve sol iç kenarlardan 40px boşluk bırakır*/
+    border-radius: 6px; /*Linklerin köşelerini 6px içe doğru yuvarlar*/
+    text-decoration: none; /*yazılardaki efekleri kaldırır*/
+}
+
+
+
+
+/* linklerin üzerine gelindiğini uygulanacak ayarlar */
+.navbar a:hover{
+    background-color: #E9EEF2; /*arka plan rengini beyaz yapar*/
+    text-decoration:underline; /*yazılara alt çizgi ekler*/
+    border-radius: 1px; /*Linklerin köşelerini içeri doğru 1px yuvarlar*/
+    transition: 0.6s ease-in-out; /*animasyonu 0.6 saniye olarak ayarlar*/
+    color: black; /*yazı rengini siyah olarak ayarlar*/
+
+}
+
+
+
+
+/* linklerdeki son eleman ayarları */
+.navbar a:last-child{
+    float: right; /*sağa doğru hizalar*/
+    width: 440px; /*genişliği 440px olarak ayarlar*/
+    height: 69px; /*uzunluğu 69px olarak ayarlar*/
+    padding-top: 2px; /*üstten 2px iç boşluk bırakır.*/
+    display:block; /*genişlik elemanın tüm yatay alanını kaplar*/
+    margin-right: 0px; /*0px sağ dış boşluk bırakır*/
+    margin-top: 0px; /*0px dış üst boşluk bırakır*/
+    margin-bottom: 0px; /*0px alt dış boşluk bırakır*/
+}
+
+
+
+
+/*Son elemanın resim ayarları*/
+.navbar a:last-child img{
+    padding-top: 10px; /*üstten 10px iç boşluk bırakır*/
+    width: 490px; /*genişliği 490px*/
+    height: 51px; /*uzuluğu 51px*/
+    padding-right:100px; /*sağ iç boşluk 100px*/
+}
+
+
+
+
+/*son  elemanın üzerinde gelindiğinde uygulanacak ayarlar*/
+.navbar a:last-child img:hover{
+    filter: invert(100%); /*elemanın içeriğini 100% tersine çevirir siyah yapar*/
+    transition: filter 0.6s ease-in-out; /*animasyonu 0.6 saniye olarak ayarlar*/
+}
+
+
+
+
+
+/*Ana sayfa başlık resim sınıfları ve özellikleri */
+/******************************************/
+.baslik_resim{
+    padding-top: 69px; /*69px iç üst boşluk bırakır*/
+    padding-bottom: 10px; /*10px alt iç boşluk bırakır*/
+    width: 100%; /*genişliği 100% olarak ayarlar tüm yatay bölümü kaplar */
+}
+
+.baslik_resim2{
+    padding-top: 11px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.baslik_resim3{
+    padding-top: 61px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.baslik_resim4{
+    padding-top: 61px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.baslik_resim5{
+    padding-top: 61px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+
+
+/*ana sayfa body etiketinin içeriği*/
+/******************************************/
+#page{
+    position:static; /*özel bir pozisyonlanma ayarı yok diğer sınıflar ve öğeler ile etkileşime girer.*/
+    overflow: hidden;
+    padding: 6em 0em 5em 0em;
+}
+
+/* page'in ana içeriği*/
+/******************************************/
+#content{
+    float: left;
+    width: 100%;
+}
+
+
+/*ana içeriğin başlık ayarları*/
+.title{
+    margin-bottom: 2em; 
+}
+
+
+/*title sınfındaki h2 içeriğinin ayarları*/
+.title h2 {
+    font-weight: 400;
+    font-size: 55px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*title sınıfındaki p içeriğinin özellikleri*/
+.title p{
+    font-size: 30px;
+}
+
+
+
+/*page içeriğindeki öğelerin bulunduğu sınıf*/
+.container{
+    width: 100%;
+    margin: 0px auto;
+    max-width: 1450px; /*maksimum genişlik 1450px*/
+}
+
+
+
+
+
+/*alt kısım ayarları*/
+/**************************************************/
+#footer-wrapper{
+    overflow: hidden; 
+    padding: 60px 0px;
+    background-color: black;
+}
+
+
+/*alt kısım bölümündeki başlık sınıfının eleman ayarları*/
+#footer .title h2{
+    font-weight: 400;  
+    font-size: 22px;
+}
+
+
+#footer .title a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#footer .title a:hover{
+    text-decoration: underline;
+}
+
+
+/*kutular ve özellikleri*/
+/******************************************************/
+#box1{
+    float: left;
+    width: 240px;
+    margin-right: 10px;
+    padding-right: 30px;
+}
+#box2{
+    float:left;
+    width: 240px;
+    margin-left: 10px;
+    padding-right: 30px;
+}
+#box3{
+    float:left;
+    width: 240px;
+    margin-left: 10px;
+    padding-right: 30px;
+}
+#box4{
+    float: left;
+    width: 240px;
+    margin-left: 10px;
+    padding-right: 30px;
+}
+#box5{
+    float: left;
+    width: 240px;
+    margin-left: 10px;
+    padding-left: 30px;
+}
+/*******************************************************/
+
+
+/*yazı içeriği sınıfı ayarları*/
+.text-container{
+    width: 100%; /*tam genişlilk*/
+    background-color: black; /*siyah arka plan*/
+    color: white; /*yazı rengi beyaz*/
+    text-align: center; /*yazı sayfanın ortasında*/
+    font-size: 20px; /*yazı büyüklüğü 20px*/
+    margin-top: 80px; /* 80px dış üst boşluk*/
+    margin-bottom: 80px; /*80px dış alt boşluk*/
+    padding-top: 40px; /*40px iç üst boşluk*/
+    padding-bottom: 40px; /*40px iç alt boşluk*/
+}
+
+
+
+/*430px ekran genişliği görüntü ayarları (iPhone 14 Pro Max)*/
+@media screen and (max-width:430px){
+    #content{
+        width: 100%;
+    }
+    .navbar{
+        max-width: 430px;
+    }
+
+    .navbar a:last-child{
+        height: 69px;
+        width: 80px;
+        margin-left: 0px;
+        margin-right: 10px;
+        padding-right: 400px;
+    }
+    #box1, #box2, #box3, #box4, #box5{
+        width: 100%;
+        text-align: center;
+        margin-left:0px;
+        margin-right: 0px;
+
+    }
+    .baslik_resim{
+        padding-top: 276px;
+    }
+    .baslik_resim2{
+        padding-top: 270px;
+    }
+    .baslik_resim3{
+        padding-top: 280px;
+    }
+    .baslik_resim4{
+        padding-top: 276px;
+    }
+    .baslik_resim5{
+        padding-top: 270px;
+    }
+    .muze-alt-yazi{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .muze-baslik-yazi{
+    margin: 10px 20px 10px 20px;
+    }
+    .video{
+        max-width: 350px;
+        max-height: 190px;
+    }
+    .korykos{
+        max-width: 360px;
+        max-height: 270px;
+    }
+    .eshab{
+        max-width: 350px;
+        max-width: 350px;
+    }
+
+}
+/*390px görüntü ayarları(iPhone 12 Pro)*/
+@media screen and (max-width:390px){
+    #content{
+        width: 100%;
+    }
+    .navbar{
+        max-width: 390px;
+    }
+
+    .navbar a:last-child{
+        height: 69px;
+        width: 80px;
+        margin-left: 0px;
+        margin-right: 8px;
+        padding-right: 380px;
+    }
+    #box1, #box2, #box3, #box4, #box5{
+        width: 100%;
+        text-align: center;
+        margin-left:0px;
+        margin-right: 0px;
+
+    }
+    .baslik_resim{
+        padding-top: 345px;
+    }
+    .baslik_resim2{
+        padding-top: 340px;
+    }
+    .baslik_resim3{
+        padding-top: 345px;
+    }
+    .baslik_resim4{
+        padding-top: 344px;
+    }
+    .baslik_resim5{
+        padding-top: 345px;
+    }
+    .muze-alt-yazi{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .muze-baslik-yazi{
+    margin: 10px 20px 10px 20px;
+    }
+    .video{
+        max-width: 320px;
+        max-height: 160px;
+    }
+    .korykos{
+        max-width: 360px;
+        max-height: 270px;
+    }
+    .eshab{
+        max-width: 310px;
+        max-width: 330px;
+    }
+
+}
+
+/*768px görüntü ayarları (iPad Mini)*/
+@media screen and (max-width:768px){
+    #content{
+        width: 100%;
+    }
+    .navbar{
+        max-width: 768px;
+    }
+
+    .navbar a:last-child{
+        height: 69px;
+        width: 80px;
+        margin-left: 0px;
+        margin-right: 10px;
+        padding-right: 400px;
+    }
+    #box1, #box2, #box3, #box4, #box5{
+        width: 100%;
+        text-align: center;
+        margin-left:0px;
+        margin-right: 0px;
+
+    }
+    .baslik_resim{
+        padding-top: 207px;
+    }
+    .baslik_resim2{
+        padding-top: 208px;
+    }
+    .baslik_resim3{
+        padding-top: 208px;
+    }
+    .baslik_resim4{
+        padding-top: 208px;
+    }
+    .baslik_resim5{
+        padding-top: 208px;
+    }
+    .muze-alt-yazi{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .muze-baslik-yazi{
+    margin: 10px 20px 10px 20px;
+    }
+    .video{
+        max-width: 680px;
+        max-height: 360px;
+    }
+    .korykos{
+        max-width: 660px;
+        max-height: 470px;
+    }
+    .eshab{
+        max-width: 600px;
+        max-width: 600px;
+    }
+
+}
+
+.korykos{
+    width: 860px; height: 460px;    
+}
+
+.eshab{
+    height: 400px; width: 600px;
+}
+
+/*butonlar ve ayarları*/
+/**********************/
+.close-btn {
+    position: absolute; /*en yakın elemente göre konumlanır*/
+    top: 10px; /*10px üst boşluk*/
+    right: 0px; /*0 px alt boşluk*/
+    font-size: 30px; /*yazı boyutu 30px*/
+    color: #fff; /*yazı rengi*/
+    cursor: pointer;/*fare butonun üzerine geldiğinde imleç şekil değiştirir.*/
+  }
+
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); /*eklendiiği öğenin yüksekliğini yarısı kadar yukar Y ekseninde kayar*/
+    font-size: 28px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .prev-btn {
+    left: -10px;
+  }
+  .next-btn {
+    right: -10px;
+  }
+
+
+
+
+
+/*gallery sınıfı ve özellikleri*/
+/********************************/
+  .gallery {
+    display: flex; /*sınıfta bulunan öğeler esnek bir şekil alır*/
+    flex-wrap:wrap; /*öeğelerin sığmadığı durumlarda bir sonraki satıra geçmesini sağlar*/
+    gap: 10px; /*içerikler arasındaki boşluk 10px*/
+    padding: 5px 35px 30px;
+  }
+  .gallery img {
+    width: 111px;
+    height: 210px;
+    object-fit: cover; /*resmin boy ayarlarını korur ve eklendiği yerde tam boyut olmasını sağlar.*/
+    transition: transform 1s ease;
+    border-radius: 8px;
+  }
+  .gallery img:hover {
+    transform: scale(1.1); /*eklendiği öğenin boyutunu 10% oranında bütüyür.*/
+    cursor: pointer; /*üzerine imleç geldiğinde, imlecin görüntüsü değişir.*/
+  }
+  .modal {
+    display: none; /*sayfada görünmez gizlenir*/
+    position: fixed; /*sayfaya sabitlenir*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2; /*eklendiği içieriği diğer içeriklerin üzerinde gösterir.*/
+  }
+  .modal img {
+    display: block; /*kendi alanının tamamını kapsar*/
+    margin: auto;
+    max-width: 900px;
+    max-height: 600px;
+  }
+
+  .modal:target { /*madal sınıfını sayfanın ortasında açar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    position: relative; /*diğer içerikler ile etkileşimde bulunur*/
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .modal-content img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: contain; /*resimi bulunduğu alana sığdırır.*/
+  }
+
+
+
+
+/*müze içerikleri*/
+/********************************/
+.muze-container{
+    width: 300px;
+    height: 100%;
+}
+
+/*müze başlık yazı içerikleri*/
+.muze-baslik-yazi{
+    font-size: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight:bold;
+}
+
+/*müze alt yazı içerikleri*/
+.muze-alt-yazi{
+    font-size: 25px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+/*harita ayarları*/
+/******************************/
+#map {
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-top: 50px;
+  }
+
+/*açıklama düğmesi içerik ayarları*/
+/***********************************/
+.custom-summary{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 185px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.custom-summary:hover {
+  background-color: white;
+  color: black;
+  transition: 0.6s ease-in-out;
+}
+/*****************************/
+.custom-summary2{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    width: 155px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.custom-summary2:hover {
+  background-color: white;
+  color: black;
+  transition: 0.6s ease-in-out;
+}
+
+/*****************************************/
+.tarihce-container{
+    padding: 20px 40px;
+}
+.tarihce-yazi{
+    text-align: left;
+    font-size: 26px;
+}
+
+/*video içerik ayarları*/
+.video{
+    width: 860px;
+    height: 515px;
+    justify-content: center;
+}
+
+/*şehir efsaneleri başlığının ayarları*/
+.sef{
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
